@@ -9,6 +9,7 @@
         @foreach ($movies as $movie )
         <div class="col my-2">
             <x-card :movie="$movie"></x-card>
+
         </div>
 
         @endforeach

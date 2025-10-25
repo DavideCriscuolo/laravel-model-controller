@@ -13,4 +13,11 @@ class PageController extends Controller
 
         return view("index", compact("movies"));
     }
+
+
+    public function SingleMovie($id)
+    {
+        $movie = Movie::find($id);  //funzione con il find per torvare il singolo film tramite id
+        return view("SingleMovie", compact("movie"));
+    }
 }
